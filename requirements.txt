@@ -1,0 +1,6 @@
+requests
+archieml
+beautifulsoup4
+yaml
+jinja2
+markdown
