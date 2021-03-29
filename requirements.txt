@@ -1,6 +1,6 @@
 requests
 archieml
 beautifulsoup4
-yaml
+pyyaml
 jinja2
 markdown
