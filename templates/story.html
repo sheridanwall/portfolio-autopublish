@@ -65,6 +65,9 @@
                 {% if processed_content %}
                     <div class="sub-font body-text">
                         {{processed_content}}
+                        {% if github_repo %}
+                          <p>Code for this story can be found at <a href="{{github_repo}}">{{github_repo}}</a></a></p>
+                        {% endif %}
                     </div>
                 {% endif %}
                 </p>
