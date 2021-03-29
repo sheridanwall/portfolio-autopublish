@@ -3,10 +3,8 @@
 
 name: Python package
 
-on:
-  schedule:
-    - cron: '* * * * *'
-
+on: [ workflow_dispatch ]
+ 
 jobs:
 
   build:
@@ -30,8 +28,8 @@ jobs:
 
     - name: setup git config
       run: |
-        git config user.name ${{ secrets.USERNAME }}
-        git config user.email ${{ secrets.EMAIL }}
+        git config user.name "Jonathan Soma"
+        git config user.email "jonathan.soma@gmail.com"
 
     - name: commit changes
       run: |
