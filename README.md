@@ -1,4 +1,4 @@
-This repo will help you publish a portfolio from Google Docs *without touching a single iota of programming.* You can do it all clickity-clickity-click through GitHub and Google Drive.
+This repo will help you publish a portfolio from Google Docs *without touching a single iota of programming.* You can do it all clickity-clickity-click through GitHub and Google Drive. It'll make a website [like this](https://jsoma.github.io/portfolio-autopublish/).
 
 ## Part 0: Make a project or ten
 
