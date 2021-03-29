@@ -24,12 +24,12 @@ logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 # Setup file structure
 try:
-    shutil.rmtree("docs")
+    shutil.rmtree("site")
 except:
     pass
 
-os.makedirs("docs")
-shutil.copytree("style", "docs/style")
+os.makedirs("site")
+shutil.copytree("style", "site/style")
 
 def to_base64(url):
     response = requests.get(url)
@@ -186,8 +186,8 @@ class Project:
         else:
             self.foldername = self.code
 
-        os.makedirs(f"docs/{self.foldername}", exist_ok=True)
-        filepath = f"docs/{self.foldername}/index.html"
+        os.makedirs(f"site/{self.foldername}", exist_ok=True)
+        filepath = f"site/{self.foldername}/index.html"
 
         with open(filepath, 'w') as fp:
             content = markdown.markdown(self.raw_content)
@@ -201,7 +201,7 @@ with open("details.yaml") as fp:
     for project in projects:
         project.write_page()
     
-    with open('docs/index.html', 'w') as fp:
+    with open('site/index.html', 'w') as fp:
         details['projects'] = projects
         hp_content = homepage_template.render(**details)
         fp.write(hp_content)
